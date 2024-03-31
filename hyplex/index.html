@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyplex Gang</title>
+    <style>
+        @font-face {
+            font-family: 'Game Battles';
+            src: url('game-battles.ttf') format('truetype');
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagens/sywave.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1, h2 {
+            font-family: 'Game Battles', sans-serif;
+            color: black;
+            cursor: default; /* Adicionado para mostrar que é clicável */
+        }
+        main {
+            padding: 20px;
+        }
+        p {
+            color: black;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .botao {
+            display: inline-block;
+            background-color: purple;
+            color: pink;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .botao span {
+            color: black;
+        }
+        .botao:hover {
+            background-color: #8e44ad;
+            color: black;
+        }
+        .section-title {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+        .signature {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: white;">Hyplex <span id="easterEgg">Gang!</span></span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="section-content">
+                <h2>Bem-vindo(a) ao site da Hyplex Gang!</h2>
+                <p>A Hyplex Gang é uma comunidade ativa e amigável de jogadores e entusiastas de jogos online. Nosso servidor no Discord é o local perfeito para se conectar com outros jogadores, participar de discussões, compartilhar conteúdo e se divertir.</p>
+                <p>Aqui estão algumas das nossas principais características:</p>
+                <ul>
+                    <li>Canais de texto e voz para jogos populares, como Minecraft, Valorant, League of Legends e CS:GO</li>
+                    <li>Uma comunidade ativa e acolhedora de jogadores de diferentes níveis de habilidade e interesses</li>
+                    <li>Eventos regulares, como torneios, partidas personalizadas e atividades em grupo</li>
+                    <li>Um staff dedicado e experiente para garantir que o servidor seja seguro e agradável para todos</li>
+                    <li>Parcerias com desenvolvedores de jogos e outras comunidades de jogos online</li>
+                </ul>
+                <p>Se você está procurando por uma comunidade ativa e acolhedora de jogadores online, não procure mais! Clique no botão abaixo para se juntar a nós no Discord:</p>
+                <a href="https://discord.gg/5BNrpHYc7g" class="botao">
+                    <span>Unir-se ao servidor</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2 class="section-title">Formulário de inscrição para equipe de administração</h2>
+                <p>Clique no botão abaixo para preencher o formulário de inscrição para a equipe de administração:</p>
+                <a href="https://forms.gle/Gr9jnSY3FFeRSZ9B9" class="botao" target="_blank">
+                    <span>Formulário de Inscrição</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hyplex Gang. Todos os direitos reservados.</p>
+        <p class="signature">Criado por BrennerCoder</p>
+    </footer>
+
+    <script>
+        document.getElementById("easterEgg").addEventListener("mouseover", function() {
+            this.style.cursor = "pointer";
+        });
+
+        document.getElementById("easterEgg").addEventListener("click", function() {
+            var audio = new Audio("midia/carai.mp3");
+            audio.play();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Maira Melki</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="principal">
+        <section>
+            <div id="menubar">
+                <div id="logo">
+                    <a href="#" id="sobre-nos-link">
+                        <img src="midia/logo2.png" alt="Logo" width="100" height="100">
+                    </a>
+                </div>
+                <img class="title-image" src="midia/banner.png" alt="Título da Página">
+                <nav>
+                    <a href="">Sobre</a>
+                    <a href="">Contato</a>
+                    <a href="">Projetos</a>
+                    <a href="">Referências</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <div id="sobre-nos-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopup()">&times;</span>
+            <h2 class="sobre-nos-title">Sobre Nós</h2>
+            <p class="sobre-nos-text">O Atelier Maira Melki é um espaço dedicado à criação e personalização de vestidos de noiva. Nossas criações são feitas sob medida, garantindo que cada noiva tenha um vestido único e perfeito para o seu grande dia.</p>
+        </div>
+    </div>
+
+    <script>
+        function abrirPopup() {
+            var popup = document.getElementById("sobre-nos-popup");
+            popup.style.display = "block"; 
+        }
+
+        function fecharPopup() {
+            document.getElementById("sobre-nos-popup").style.display = "none";
+        }
+
+        document.getElementById("sobre-nos-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            abrirPopup();
+        });
+
+        var logo = document.getElementById("logo");
+        logo.addEventListener("mouseover", function() {
+            logo.style.transform = "scale(1.1)";
+        });
+
+        logo.addEventListener("mouseout", function() {
+            logo.style.transform = "scale(1)";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Desafio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'idroid';
+            src: url('fontes/idroid.otf') format('truetype');
+        }
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        header{
+            background-image: linear-gradient(rgb(60, 182, 141), rgb(0, 70, 35));
+            padding: 15px;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.432);
+        }
+        body{
+            background-color: rgb(255, 230, 200);
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            background-color: white;
+            width: 1000px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.432);
+        }
+        #titulo{
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.541);
+            font-family: 'Bebas Neue';
+            font-size: 50px;
+        }
+        #subtitulo{
+            color: white;
+            text-align: center;
+            text-shadow: 3px 1px 5px rgba(0, 0, 0, 0.788);;
+        }
+        h1{
+            color: rgb(0, 95, 48);
+            font-family: 'idroid';
+        }
+        h2{
+            color: rgb(0, 95, 48);
+            font-family: 'idroid';
+            padding: 1px 5px;
+            background-image: linear-gradient(to right, rgb(180, 252, 223), rgba(255, 255, 255, 0)) 
+        }
+        p{
+            text-indent: 40px;
+            padding: 12px 3px;
+            text-align: justify;
+        }
+        .nav{
+            text-decoration: none;
+            background-color: transparent;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            transition: all 0.5s;
+            border-radius: 5px;
+
+        }
+        .nav:visited{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            text-indent: 10px;
+        }
+        .nav:hover{
+            background-color: rgb(60, 182, 141);
+            color: darkgreen;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .video{
+            margin: 0;
+            background-color: darkgreen;
+            text-align: center;
+        }
+        #bugdr{
+            text-align: center;
+        }
+        #irina{
+            text-align: center;
+        }
+        #dandr{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: darkgreen;
+            background-color: rgb(60, 182, 141);
+        }
+        footer{
+            background-color: darkgreen;
+            color: black;
+            text-align: center;
+        }
+        section{
+            background-color: rgb(170, 255, 227);
+            border-radius: 10px;
+            margin: auto;
+            width: 800px;
+            padding: 0px 10px;
+        }
+        #ext{
+            background-color: rgb(46, 192, 143);
+            color: white;
+            font-weight: bold;
+            border-radius: 10px 10px 0px 0px;
+            text-indent: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Curiosidades de Tecnologia</h1>
+        <p id="subtitulo">Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+        <nav>
+            <a class="nav" href="a">Home</a>
+            <a class="nav" href="">Notícias</a>
+            <a class="nav" href="">Curiosidades</a>
+            <a class="nav" href="">Fale Conosco</a></nav>
+    </header>
+    <main>
+        <h1>História do Mascote do Android</h1>
+        <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+        <h2>A primeira versão</h2>
+        <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="">Dan Morrill</a>. Ele conta que abriu o <a href="">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+        <div id="dandr">
+            <source>
+            <img src="imagens/dan-droids.png" alt="a">
+        </div>
+        <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+        <h2>Surge um novo mascote</h2>
+        <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+        <div id="irina">
+            <source>
+            <img src="imagens/irina-blok.jpg" alt="irina" width="1000">
+        </div>
+        <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
+        <div id="bugdr">
+            <source>
+            <img src="imagens/bugdroid.png" alt="bugdroid">
+        </div>
+        <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+        <div class="video">
+            <iframe width="800" height="460" src="https://www.youtube.com/embed/YB9c1Zg_Ln4?si=XbgJqrVXh_keDWWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <section class="extras">
+            <div id="ext">
+                <p>Quer aprender mais? </p>
+            </div>
+            <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+
+            <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.
+
+                Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
+                [/EXTRA]
+                
+                Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
+
+        </section>
+    </main>
+    <footer>
+        Site criado por Arthur Felipe para o CursoemVideo.
+    </footer>
+</body>
+</html>
