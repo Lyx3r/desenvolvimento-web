@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: 'sss';
     src: url('simple_plan/Simple\ Plan.otf') format(opentype);
@@ -8,8 +10,9 @@
 }
 
 :root{
-    --cor1: rgba(46, 46, 46, 0.76);
-    --cor2: rgba(20, 20, 20, 0.411);
+    --cor1: rgba(46, 46, 46, 0.603);
+    --cor2: rgba(34, 34, 34, 0.411);
+    --border: rgba(255, 255, 255, .1);
 }
 
 body {
@@ -21,75 +24,93 @@ body {
     color: white;
 }
 
-header > p > a {
+#apresentação > p > a {
     display: inline-block;
-    color: rgb(138, 138, 138);
+    color: rgb(255, 70, 70);
     text-decoration: none;
     transition: 0.5s ease-out;
     padding: 2px;
+    border-radius: 5px;
 }
 
-header > p > a:visited {
-    color: rgb(138, 138, 138);
-    text-decoration: none;
+#inicio {
+    text-indent: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
 }
 
-header > p > a:hover {
+#apresentação > p > a:visited {
     color: rgb(255, 70, 70);
     text-decoration: none;
-    background-color: rgb(75, 75, 75);
-    border-radius: 5px;
-    
 }
 
-header {
+#apresentação > p > a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(255, 70, 70);
+    border-radius: 5px;
+}
+
+#apresentação {
+    border: 2px solid var(--border);
     margin-top: 50px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.404);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
     margin: auto;
     border-radius: 8px;
     text-align: center;
     padding: 20px;
-    min-width: 360px;
+    min-width: 353px;
     max-width: 950px;
 }
 
-header h1 {
-    font-size: 53px;
+#apresentação h1 {
+    font-size: 3.3em;
     font-weight: 50;
     font-family: 'sss', Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px 0px 10px 0px;
 }
 
-header h2 {
-    padding: 0px 0px 35px 0px;
+#apresentação h2 {
+    padding: 0 0 35px 0;
 }
 
-header p {
-    padding: 10px 0px 20px 0px;
+#apresentação p {
+    padding: 10px 0 20px 0;
 }
 
-h3 {
-    text-indent: 20px;
-    margin-bottom: 15px;
+.topico {
+    text-indent: 10px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.226), transparent);
+    border-radius: 5px;
 }
 
-p {
-    text-align: center;
+.content {
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 55px;
+    padding: 30px;
+    word-spacing: 3px;
+    line-height: 1.5em;
 }
 
 main {
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.404);
+    border: 2px solid var(--border);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
     display: block;
     padding: 20px;
     border-radius: 8px 8px 8px 8px;
-    margin: 30px auto auto auto;
-    height: 78vh;
-    min-width: 360px;
-    max-width: 950px;
+    margin: 20px auto auto auto;
+    height: 1750px;
+    min-width: 353px;
+    max-width: 900px;
     background-color: var(--cor1);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
 
 footer {
@@ -106,4 +127,14 @@ footer p {
 footer a {
     color: rgb(0,255,0);
     text-decoration: underline;
+}
+
+.red {
+    color: rgb(255, 167, 167);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.red:hover {
+    color: rgb(255, 93, 93);
 }
