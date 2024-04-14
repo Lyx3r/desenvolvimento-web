@@ -138,3 +138,40 @@ footer a {
 .red:hover {
     color: rgb(255, 93, 93);
 }
+
+/* Paginas de Apresentação */
+
+.per {
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+.ft {
+    margin: auto;
+    background-color: var(--cor1);
+    height: 320px;
+    width: 245px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+    align-content: center;
+}
+
+img {
+    background-color: white;
+    height: 300px;
+}
+
+.desc {
+    padding-inline: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.atop {
+
+}
+
+.atop div{
+    padding: 60px;
+    margin: auto;
+    align-items: center;
+}
