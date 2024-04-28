@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel tesoura</title>
+</head>
+<body>
+    <p>Jokempo</p>
+    <p>
+        <button onclick="
+            play('pedra');
+        ">Pedra</button>
+        <button onclick="
+            play('papel');
+        ">Papel</button>
+        <button onclick="
+            play('tesoura');
+        ">Tesoura</button>
+    </p>
+
+    <script>
+        function play(p1Move) {
+            const comMove = comMove1();
+            let result = '';
+            if (p1Move === 'pedra') {
+                if (comMove === 'pedra') {
+                    result = 'Empate.';
+                } else if (comMove === 'papel') {
+                    result = 'Derrota.';
+                } else if (comMove === 'tesoura') {
+                    result = 'Vitoria.';
+                }
+            } else if (p1Move === 'papel') {
+                if (comMove === 'papel') {
+                    result = 'Empate.';
+                } else if (comMove === 'tesoura') {
+                    result = 'Derrota.';
+                } else if (comMove === 'pedra') {
+                    result = 'Vitoria.';
+                }
+            } else if (p1Move === 'tesoura') {
+                if (comMove === 'tesoura') {
+                    result = 'Empate.';
+                } else if (comMove === 'pedra') {
+                    result = 'Derrota.';
+                } else if (comMove === 'papel') {
+                    result = 'Vitoria.';
+                }
+            }
+            alert(`VocÃª escolheu ${p1Move}, COM escolheu ${comMove} - ${result}`);
+        }
+        
+        function comMove1() {
+            const rNumber = Math.random();
+            let comMove = '';
+            if (rNumber >= 0 && rNumber < 1 / 3) {
+                comMove = 'pedra';
+            } else if (rNumber >= 1 / 3 && rNumber < 2 / 3) {
+                comMove = 'papel';
+            } else if (rNumber >= 2 / 3 && rNumber < 1) {
+                comMove = 'tesoura';
+            }
+            return comMove;
+        }
+    </script>
+</body>
+</html>

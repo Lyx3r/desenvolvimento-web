@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel tesoura</title>
+    <script>
+        function comMove() {
+            // Esta função deve retornar uma jogada aleatória do computador
+            // Implemente a lógica para obter uma jogada aleatória entre 'pedra', 'papel' ou 'tesoura'
+            let moves = ['pedra', 'papel', 'tesoura'];
+            return moves[Math.floor(Math.random() * moves.length)];
+        }
+
+        function play(playerMove) {
+            let comMove = comMove(); // Obtém a jogada do computador
+            let result = '';
+            if (comMove === playerMove) {
+                result = 'Empate.';
+            } else if ((comMove === 'pedra' && playerMove === 'tesoura') ||
+                (comMove === 'papel' && playerMove === 'pedra') ||
+                (comMove === 'tesoura' && playerMove === 'papel')) {
+                result = 'Derrota.';
+            } else {
+                result = 'Vitória.';
+            }
+            alert(`Você escolheu ${playerMove}, COM escolheu ${comMove} - ${result}`);
+        }
+    </script>
+</head>
+<body>
+    <p>Jokempo</p>
+    <p>
+        <button onclick="play('pedra')">Pedra</button>
+        <button onclick="play('papel')">Papel</button>
+        <button onclick="play('tesoura')">Tesoura</button>
+    </p>
+</body>
+</html>

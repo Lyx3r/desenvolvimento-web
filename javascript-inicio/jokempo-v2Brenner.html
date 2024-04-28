@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel tesoura</title>
+    <style>
+        button { margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <p>Jokempo</p>
+    <p>
+        <button onclick="play('pedra')">Pedra</button>
+        <button onclick="play('papel')">Papel</button>
+        <button onclick="play('tesoura')">Tesoura</button>
+    </p>
+
+    <script>
+        function play(playerMove) {
+            const moves = ['pedra', 'papel', 'tesoura'];
+            const comMove = moves[Math.floor(Math.random() * 3)];
+            const outcomes = { 'pedra': { 'pedra': 'Empate.', 'papel': 'Derrota.', 'tesoura': 'Vitória.' }, 'papel': { 'pedra': 'Vitória.', 'papel': 'Empate.', 'tesoura': 'Derrota.' }, 'tesoura': { 'pedra': 'Derrota.', 'papel': 'Vitória.', 'tesoura': 'Empate.' } };
+            const result = outcomes[playerMove][comMove];
+            alert(`Você escolheu ${playerMove}, o computador escolheu ${comMove} - ${result}`);
+        }
+    </script>
+</body>
+</html>
